@@ -2,7 +2,7 @@ from flask import Blueprint, request, jsonify
 from db import get_connection
 from datetime import datetime
 import pandas as pd
-from ap_db_sync.utils import safe_parse_date, parse_currency  # No factored/actual_payment for AP
+from ar_db_sync.utils import safe_parse_date, parse_currency  # No factored/actual_payment for AP
 
 ap_api = Blueprint('ap_api', __name__, url_prefix='/ap')
 
